@@ -1,0 +1,205 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo_ul{
+    margin: 2% 0 0 3%;
+}
+
+.logo{
+    width: 5%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background: url("/imgs/wpforest.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+/* ul{
+    navegação 
+}*/
+
+.content-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15vw;
+    font-size: 180%;
+    height: 80vh;
+    width: 60vw;
+}
+
+.content-title button{
+    background-color: #8FD70B;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1%;
+    margin-top: 2%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+.content-title button:hover{
+    background-color: #D6F3E1;
+}
+
+
+.custom-shape-divider-bottom-1693517542 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1693517542 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1693517542 .shape-fill {
+    fill: #06292F;
+}
+
+/* SECTION */
+
+section{
+    background-color: #06292F;
+}
+
+.big-box{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+}
+
+.small-box{
+    background-color: #D6F3E1;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20%;
+    cursor: pointer;
+}
+
+.small-box h1{
+    text-align: right;
+    padding-bottom: 5%;
+    opacity: 0.5;
+}
+
+.small-box a{
+    opacity: 0.5;
+    padding-top: 15px;
+    float: right;
+}
+
+.small-box h3{
+    padding-bottom: 3%;
+}
+
+
+
+/* section info */
+
+.section_info #tutle_img{
+    width: 80%;
+}
+
+.section_info #rock_img img{
+    width: 60%;
+}
+
+.section_info #city_img img{
+    width: 80%;
+}
+
+.section_info .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+.section_info .info div{
+    padding: 5%;
+}
+
+.section_info .info .text{
+    color: aliceblue;
+}
+
+.section_info .info .text h1, p{
+    margin: 5%;
+}
+
+.section_info .info .text{
+    padding: 2%;
+}
+
+.section_info .info .div_img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section_info .info .div_img img{
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #344E41;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+    font-weight: bold;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 425px) {
+    .big-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_info .info{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section_info .info{
+        display: flex;
+        flex-direction: column;
+    }
+}
